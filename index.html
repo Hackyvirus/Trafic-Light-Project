@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sushant Portfolio</title>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+body{
+background-color:  hsl(0, 0%, 7%);
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(-45deg, hsl(0, 0%, 2.4%), hsl(240, 3%, 19.4%),hsl(240, 13%, 4.5%), hsl(240, 1%, 17%));
+background-size: 400% 400%;
+animation:gradient  60s ease infinite;
+height: 100vh;
+
+}
+@keyframes gradient {0% {
+background-position: 0% 50%;
+}
+50%{
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+main{
+display: flex;
+justify-content: space-between;
+align-items:center;
+flex-direction: row;
+max-width: 1200px;
+height: 100dvh;
+margin: auto;
+}
+aside {
+background-color: hsl(240, 2%, 12%);
+max-width: 240px;
+height: 600px;
+display: flex;
+justify-content: space-around;
+flex-direction:  column;
+align-items:  center;
+border:1px solid  hsl(0, 0%, 22%);
+border-radius: 10px;
+}
+#profile-pic{
+width: 120px;
+height: 120px;
+border-radius: 50%;}
+#img-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 260px;
+justify-content:space-evenly;
+gap: 14px;
+}
+#subtitle{
+text-align: center;
+background: hsl(240, 1%, 17%);
+font-size: 12px;
+color: white;
+border-radius: 8px;
+padding: 8px 10px;
+}
+#title{
+color: hsl(0, 0%, 98%);
+}
+#img-container-hr{
+width: 90%;
+height: 1px;
+background: hsl(0, 0%, 22%);
+}
+.contact{
+min-width: 100%;
+display: flex;
+align-items: center;
+gap: 16px;
+height: 50px;
+}
+#contact-container {
+width: 90%;
+display: flex;
+flex-direction: column;
+height: 270px;
+justify-content: start;
+gap: 30px;
+}
+.contact-img img
+{width: 35px;
+border-radius: 50%;}
+.contact-details
+{
+width: fit-content;
+overflow: hidden;
+height: 100%;
+display: flex;flex-direction: column;
+justify-content: space-evenly;
+}
+.contact-details p{
+color: hsla(0, 0%, 84%, 0.7);
+font-size:12px;
+}
+ .contact-details a{
+color:  hsl(0, 0%, 98%);
+text-decoration: none;
+font-size:14px;
+}
+#social-icons{
+display: flex;
+justify-content: center;
+gap: 12px;
+}
+.footer-social-img{
+width: 25px;
+border-radius: 50%;
+}
+
+/* container */
+#container{ 
+width: 900px;
+height: 600px;
+background-color: hsl(240, 2%, 12%);
+border: 1px solid hsl(0, 0%, 22%);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#trafic-light{
+background: hsl(240, 1%, 17%);
+width: 250px;
+height: 422px;
+display: flex;justify-content: start;
+  align-items: center;
+margin: auto;
+flex-direction: column;
+border-radius: 50px;
+padding: 41px;
+gap: 40px;
+
+}
+#circle{
+margin-top: 40px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+animation:lights 60s ease-in-out infinite;
+
+}
+@keyframes lights{
+0% {background-color: green;
+}33.33%{
+background-color:green;
+}33.34%{
+background-color:yellow;
+}66.66% {
+background-color: yellow;
+}66.67%{
+background-color:red;
+}100% {
+background-color: red;
+}
+}
+#timer{
+color: white;
+font-size: 40px;
+font-weight:650;}
+#rules {
+display: inline-block;
+white-space: nowrap;
+font-size: 22px;
+color: white;
+animation: scroll 20s linear infinite;
+}
+
+#rules-container {width: 100%;
+overflow: hidden;
+margin-top: 20px;
+}
+
+@keyframes scroll {
+0% {
+transform: translateX(10%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+</style>
+
+</head>
+
+<body>
+<main>
+ <aside>
+<div id="img-container">
+<img src="sushant.jpg" alt="Sushant Profile" id="profile-pic"/>
+<h2 id="title">Sushant Atram</h2>
+<div id="subtitle"><p>Founde & CEO- Eversity</p>Full Stack Developer | Ethical Hacker</div>
+<div id="img-container-hr"></div>
+</div>
+
+<div id="contact-container">
+
+<div class="contact"> 
+<span class="contact-img"> <img src="email.png" alt=""/> </span> 
+<div class="contact-details">
+<p>Email</p>
+<hr class="contact-hr">
+<a class="c-link" href="mailto:sushantatram591081@gmail.com">sushantatram591081@gmail.com</a>
+</div>
+</div>
+
+<div class="contact"> 
+<span class="contact-img"> <img src="website.jpg" alt=""/> </span> 
+<div class="contact-details">
+<p>Website</p>
+<hr class="contact-hr">
+<a class="c-link" target="_blank"  href="https://eversity.co.in">Eversity</a>
+</div>
+</div>
+
+
+<div class="contact"> 
+<span class="contact-img"> <img src="phone.png" alt=""/> </span> 
+<div class="contact-details">
+<p>Phone No</p>
+<hr class="contact-hr">
+<a>9356381344</a>
+</div>
+</div>
+
+<div id="social-icons">
+<span class="social-img"> <a target="_blank" href="https://www.instagram.com/sushant_atram_/"> <img class="footer-social-img" src="insta.jpg" alt="Instagram"/></a> </span> 
+<span class="social-img"> <a target="_blank" href="https://www.linkedin.com/in/sushantatram/"> <img class="footer-social-img" src="linkedin.png" alt="Linkedin"/></a> </span>
+<span class="social-img"> <a target="_blank" href=""> <img class="footer-social-img" src="x.png" alt="x"/></a> </span>
+<span class="social-img"> <a target="_blank" href="https://github.com/Hackyvirus"> <img class="footer-social-img" src="github.png" alt="github"/></a> </span>
+</div>
+</div>
+</aside>
+
+
+<div id="container">
+<div id="trafic-light">
+<div id="circle"></div><div id="timer">6</div>
+<div id="rules-container">
+<div id="rules">Left Turn Rules: Yield to pedestrians in the crosswalk. Check for oncoming traffic before turning. Complete your turn only when safe. Use your indicator before turning.
+</div>
+</div>
+
+</div>
+</div>
+
+</main>
+<script>
+let timerElement = document.getElementById('timer');
+let timeRemaining = 60;
+timerElement.innerText = timeRemaining;
+function updateTimer() {
+timeRemaining--;
+if (timeRemaining < 0) {
+timeRemaining = 60;
+}
+timerElement.textContent = timeRemaining;
+}setInterval(updateTimer, 1000);
+</script>
+</body>
+</html>
